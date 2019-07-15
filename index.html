@@ -6,16 +6,17 @@
     <title>Online Registration Form</title>
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header>
         <h1>The Code Review</h1>
         <h2>Signup for our newsletter</h2>
-        <p>Get the latest new on how your code is doing right in your inbox</p>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
       </header>
-
+      <hr class="heavy-hr"/>
+      <hr class="light-hr" />
       <form>
         <fieldset>
             <legend>Contact Information</legend>
@@ -37,7 +38,7 @@
 
             <label for="state">State</label>
             <select id="state" name="state">
-              <option>Choose State</option>
+              <option selected disabled>Choose State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -93,7 +94,7 @@
             <label for="zip-code">Zip Code</label>
             <input id="zip-code" type="text" name="zip-code">
         </fieldset>
-        <hr />
+        <!-- <hr class="light-hr"/> -->
         <fieldset>
             <legend>Newsletter</legend>
 

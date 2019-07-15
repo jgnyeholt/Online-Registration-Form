@@ -1,3 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Merriweather', serif;
+}
+
+.heavy-hr,
+.light-hr {
+  margin: 5px 1em;
+  border: none;
+  background-color: #2d3945;
+}
+
+.heavy-hr{
+  height: 4px;
+}
+
+.light-hr {
+  height: 2px;
+}
+
+/*-----------Header styles-----------*/
+h1 {
+  background-color: #2d3945;
+  color: white;
+  margin: 0;
+  padding: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+h2{
+  color: #2d3945;
+  font-size: 1.25em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+ header p {
+  font-size: .9em;
+  color: #bec2c5;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2.25em;
+  line-height: 1.25;
+  font-weight: lighter;
+}
+
+
+/*-----------Form styles-----------*/
+
+form {
+  padding: 1em;
+}
+
+legend {
+  color: #2d3945;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-inline-start:0;
+  margin-inline-end:0;
+  padding-bottom: 1.5em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset:first-child {
+  border-bottom: 2px solid #2d3945;
+}
+
+
+label{
+  font-size: .9em;
+  font-weight: lighter;
+  color: #929eaa;
+  padding: 1.2em 1em 1em 0;
+}
+
+input, select{
+  background-color: #eff0f1;
+  border: none;
+  margin: 0;
+  padding: .7em;
+  border-radius: 3px;
+  width: 100%;
+  font-family: 'Merriweather';
+  font-size: .9em;
+  color:#2d3945;
+}
+
+input:focus, select:focus{
+  outline-color: #46698b;
+}
+
+input::placeholder{
+  font-size: .7em;
+  text-align: right;
+  line-height: 1.5;
+  font-style: italic;
+  padding: 5px;
+  color: #b3b8bb;
+}
+
+input[id=zip-code]{
+  width: 50%;
 }
