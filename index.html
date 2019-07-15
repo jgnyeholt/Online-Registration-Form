@@ -94,39 +94,49 @@
             <label for="zip-code">Zip Code</label>
             <input id="zip-code" type="text" name="zip-code">
         </fieldset>
-        <!-- <hr class="light-hr"/> -->
         <fieldset>
             <legend>Newsletter</legend>
 
             <label>Select the newletters you would like to receive</label>
 
-            <input id="html" type="checkbox" name="news-option" value="HTML News">
-            <label for="html">HTML News</label>
+            <div class="form-group">
+              <input id="html" type="checkbox" name="news-option" value="HTML News">
+              <label for="html">HTML News</label>
+            </div>
 
-            <input id="css" type="checkbox" name="news-option" value="CSS News">
-            <label for="css">CSS News</label>
+            <div class="form-group">
+              <input id="css" type="checkbox" name="news-option" value="CSS News">
+              <label for="css">CSS News</label>
+            </div>
 
-            <input id="js" type="checkbox" name="news-option" value="Javascript News">
-            <label for="css">Javascript News</label>
+            <div class="form-group">
+              <input id="js" type="checkbox" name="news-option" value="Javascript News">
+              <label for="css">Javascript News</label>
+            </div>
 
             <label>Newletter format</label>
 
-            <input id="html-format" type="radio" name="news-format" value="HTML">
-            <label for="html-format">HTML</label>
+            <div class="form-group">
+              <input id="html-format" type="radio" name="news-format" value="HTML">
+              <label for="html-format">HTML</label>
+            </div>
 
-            <input id="plain-format" type="radio" name="news-format" value="Plain Text">
-            <label for="plain-format">Plain text</label>
+            <div class="form-group">
+              <input id="plain-format" type="radio" name="news-format" value="Plain Text">
+              <label for="plain-format">Plain text</label>
+            </div>
 
-            <label for="comment">Other topic you'd like to hear about</label>
+
+
+            <label for="comment">Other topics you'd like to hear about</label>
             <textarea id="comment" name="comment"></textarea>
         </fieldset>
 
-        <input type="submit">Sign Up</input>
-
+        <button type="submit">Sign Up</button>
       </form>
 
       <footer>
-          <p>Copyright The Code Review</p>
+          <p><em>Copyright The Code Review</em></p>
       </footer>
     </div>
   </body>

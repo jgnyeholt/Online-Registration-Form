@@ -60,8 +60,10 @@ form {
 legend {
   color: #2d3945;
   font-weight: bold;
-  margin-bottom: 1em;
+  font-size: 1.25em;
+  margin-bottom: .25em;
 }
+
 
 fieldset {
   border: none;
@@ -69,13 +71,13 @@ fieldset {
   margin-inline-start:0;
   margin-inline-end:0;
   padding-bottom: 1.5em;
-  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
 
 fieldset:first-child {
   border-bottom: 2px solid #2d3945;
+  margin-bottom: 1.25em;
 }
 
 
@@ -113,4 +115,62 @@ input::placeholder{
 
 input[id=zip-code]{
   width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .75em;
+}
+
+.form-group input {
+  width: auto;
+  flex-grow: 0;
+  display: flex;
+}
+
+.form-group label{
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  padding-left: .75em;
+}
+
+textarea {
+  background-color: #eff0f1;
+  border: none;
+  width: 100%;
+  min-height: 5em;
+}
+
+button {
+  background-color: #4ebbb5;
+  border: none;
+  border-radius: 3px;
+  padding: 1em;
+  width: 100%;
+  color: white;
+}
+
+footer{
+  height: 15em;
+}
+
+footer p {
+  text-align: center;
+  font-size: .9em;
+  font-weight: lighter;
+  color: #929eaa;
+  padding: 1em;
+  margin: 0;
+}
+
+
+/*-----------Media Queries-----------*/
+
+@media (min-screen: 768px){
+  *{
+    background-color: orange;
+  }
+
 }
