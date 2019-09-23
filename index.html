@@ -17,39 +17,43 @@
       </header>
       <hr class="heavy-hr"/>
       <hr class="light-hr" />
-      <form>
+      <form id="form">
         <fieldset>
             <legend>Contact Information</legend>
-
             <div class="contact-group">
               <label for="full-name">Full Name</label>
-              <input class="required" id="full-name" type="text" name="full-name" placeholder="Required" required>
+              <input class="required" id="full-name" type="text" name="full-name" placeholder="Required">
             </div>
+            <p class="error" id="full-name-error"></p>
 
             <div class="contact-group">
               <label for="email-address">Email Address</label>
-              <input class="required" id="email-address" type="email" name="email-address" placeholder="Required" required>
+              <input class="required" id="email-address" type="text" name="email-address" placeholder="Required">
             </div>
+            <p class="error" id="email-address-error"></p>
 
             <div class="contact-group">
               <label for="phone-number">Phone Number</label>
               <input id="phone-number" type="tel" name="phone-number" placeholder="###-###-####">
             </div>
+            <p class="error" id="phone-number-error"></p>
 
             <div class="contact-group">
               <label for="street-address">Street Address</label>
               <input id="street-address" type="text" name="street-address" placeholder="221B Baker Street">
             </div>
+            <p class="error" id="street-address-error"></p>
 
             <div class="contact-group">
               <label for="city">City</label>
               <input id="city" type="text" name="city" placeholder="London">
             </div>
+            <p class="error" id="city-error"></p>
 
             <div class="contact-group">
               <label for="state">State</label>
               <select id="state" name="state">
-                <option selected disabled>Choose State</option>
+                <option selected disabled></option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -102,6 +106,7 @@
                 <option value="WY">Wyoming</option>
               </select>
             </div>
+            <p class="error" id="state-error"></p>
 
             <div class="contact-group">
               <label for="zip-code">Zip Code</label>
@@ -109,6 +114,7 @@
                 <input id="zip-code" type="text" name="zip-code" placeholder="12345">
               </div>
             </div>
+            <p class="error" id="zip-code-error"></p>
         </fieldset>
         <!-- newsletter -->
         <fieldset>
@@ -156,5 +162,6 @@
     <footer>
         <p><em>Copyright The Code Review</em></p>
     </footer>
+    <script src="js/site.js"></script>
   </body>
 </html>
